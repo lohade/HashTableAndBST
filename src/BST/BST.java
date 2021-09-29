@@ -55,6 +55,25 @@ public class BST<T extends Comparable<T>>{
                 inorder(node.right);
         }
     }
+      public Node searchNode(Node<T> node,T val){
+        if(node==null){
+            return node;
+        }
+        else if(val.compareTo(node.data)<0){
+            node.left = searchNode(node.left,val);
+        }
+        else if(val.compareTo(node.data) > 0){
+            node.right = searchNode(node.right,val);
+        }
+        return node;
+    }
+    boolean search(Node<T> node,T val){
+        node  =  searchNode(node, val);
+        if(node != null)
+            return true;
+        else
+            return false;
+    }
 }
 
 

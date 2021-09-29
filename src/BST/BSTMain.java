@@ -9,12 +9,24 @@ public class BSTMain {
         root=bst.insertNode(root,30);
         root= bst.insertNode(root,70);
         root= bst.insertNode(root,60);
-        root= bst.insertNode(root,10);
-        root= bst.insertNode(root,90);
-        root= bst.insertNode(root,23);
+        root= bst.insertNode(root,40);
+        root= bst.insertNode(root,95);
+        root= bst.insertNode(root,22);
+        root= bst.insertNode(root,11);
+        root= bst.insertNode(root,65);
+        root= bst.insertNode(root,16);
+        root= bst.insertNode(root,3);
+        root= bst.insertNode(root,63);
+        root= bst.insertNode(root,67);
         bst.inorder(root);
-        //System.out.println(root.left.data+"right data"+root.right.data);
         System.out.println(+bst.size(root));
+
+        if(bst.search(root,6))
+            System.out.println("node is present");
+        else
+            System.out.println("node is absent");
+        //System.out.println("node is present:"+bst.search(root,6));
+
 
     }
 }
