@@ -1,0 +1,21 @@
+##### Java template
+# Compiled class file
+* .class
+
+# Log file
+* .Log
+
+# BlueJ files
+* .ctxt
+
+# Mobile Tools for  Java(J2ME)
+.mtj.tmp/
+
+# IntelliJ IDEA #
+.idea/
+*.iws
+*iml
+out/
+target/
+
+# Package Files #
